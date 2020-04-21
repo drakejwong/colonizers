@@ -1,6 +1,7 @@
 """
 Module for Player, Building, etc.
 """
+<<<<<<< HEAD
 import card
 
 class Player:
@@ -14,3 +15,7 @@ class Player:
     def change_mats(mats, ct):
         # Takes in list of materials and corresponding list of counts and changes player's materials
         self._materials[m] += ct for m in mats
+=======
+
+#
+>>>>>>> Player module
