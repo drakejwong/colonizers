@@ -6,4 +6,5 @@ app = flask.Flask(__name__)
 def my_index():
     return flask.render_template("index.html", token="Let's Colonize!")
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
