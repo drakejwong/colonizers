@@ -69,11 +69,6 @@ class Monopoly(DevCard):
 class VPCard(DevCard):
     def __init__(self, category):
         super().__init__(category)
-<<<<<<< HEAD
-    def use():
-        Player.add_vp(1)
-=======
     def use(Player):
         Player.add_vp(1) //do we want to show this? Points from VP cards are hidden until end
         _used = True
->>>>>>> use functions for dev cards -- basic
