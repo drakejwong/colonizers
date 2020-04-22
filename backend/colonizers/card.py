@@ -25,12 +25,10 @@ class MatCard(Card):
         super().__init__(category)
         self.material = material
 
-
 class DevCard(Card):
     def __init__(self, category):
         super().__init__(category)
         _used = False
-
 
 class Knight(DevCard):
     def __init__(self, category):
@@ -39,7 +37,6 @@ class Knight(DevCard):
         //Should Game handle move_robber? spec says owner.move_robber
         move_robber(Player, Hex)
         _used = True
-
 
 class YearOfPlentyDevCard):
     def __init__(self, category):
