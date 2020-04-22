@@ -40,7 +40,6 @@ class Knight(DevCard):
         move_robber(Player, Hex)
         _used = True
 
-
 class YearOfPlentyDevCard):
     def __init__(self, category):
         super().__init__(category)
