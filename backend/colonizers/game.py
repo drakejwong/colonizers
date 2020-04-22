@@ -5,7 +5,7 @@ import player, board, card
 import random
 from collections import OrderedDict
 
-class Game:
+class Game():
 
     def __init__(self, num_players):
         self._players = [player.Player() for n in num_players]
