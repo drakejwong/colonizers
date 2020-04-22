@@ -7,7 +7,7 @@ import card
 class Player:
 
     def __init__(self, color):
-        self._materials = {'wood": 0, "sheep": 0,
+        self._materials = {"wood": 0, "sheep": 0,
                            "brick": 0, "ore": 0, "wheat": 0}
         self._devcards = []
         self._color = color
@@ -16,8 +16,7 @@ class Player:
     def materials(self):
         return self._materials
 
-    @materials.setter
-    def materials(self, mat, amt):
+    def transact(self, mat, amt):
         """
         Add/subtract according amt(s) of mat(s)
         """
@@ -25,4 +24,4 @@ class Player:
             for m, a in zip(mat, amt)
             self._materials[m] += a
         else:
-            self._materials[m] += a
+            self._materials[mat] += amt
